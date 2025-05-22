@@ -1,0 +1,39 @@
+.Header {
+  display: flex;
+  align-items: center;     /* vertically center the image and text container */
+  padding: 1rem;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+}
+
+.Profilepic {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+.TextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* center vertically */
+  text-align: center;       /* center text horizontally */
+  min-width: 150px;         /* optional, ensure some width */
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #333;
+}
+
+.Name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  margin: 0;
+  margin-top: 0.25rem;   /* small space below heading */
+}
