@@ -11,6 +11,6 @@ import { NgIf, NgFor } from '@angular/common';
 })
 export class ContentComponent {
  
-   showAboutme = true;
+   showAboutme = false;
    skills = ['Angular', 'TypeScript', 'CSS', 'Git','Node.js','REST APIs'];
 }
