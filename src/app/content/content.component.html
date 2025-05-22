@@ -5,23 +5,23 @@
     This page is a little glimpse into who I am and what I do.
   </p>
 
-  <h3>About Me</h3>
-  <p>
+<h3 (click)="showAboutme = !showAboutme" class="aboutme">About Me </h3>
+  <p *ngIf="showAboutme">
     I'm currently exploring modern web technologies like Angular, and enjoy building responsive,
     user-friendly applications. Outside of tech, I love photography, nature walks, and playing the guitar.
   </p>
 
   <h3>Skills</h3>
   <ul>
-    <li>JavaScript / TypeScript</li>
-    <li>Angular</li>
-    <li>HTML & CSS</li>
-    <li>Node.js</li>
-    <li>REST APIs</li>
+     <li *ngFor="let skill of skills">
+    {{ skill }}
+  </li>
+
   </ul>
 
   <h3>Contact</h3>
   <p>
     You can reach me at: <a href="mailto:alex@example.com">alex</a>
   </p>
+
 </div>

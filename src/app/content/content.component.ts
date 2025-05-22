@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { NgIf, NgFor } from '@angular/common';
+
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [],
   templateUrl: './content.component.html',
-  styleUrl: './content.component.css'
+  styleUrl: './content.component.css',
+    imports: [NgIf, NgFor] ,
 })
 export class ContentComponent {
-
+ 
+   showAboutme = true;
+   skills = ['Angular', 'TypeScript', 'CSS', 'Git','Node.js','REST APIs'];
 }
